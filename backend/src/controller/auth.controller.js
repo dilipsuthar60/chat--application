@@ -77,3 +77,7 @@ export const logout = (req, res) => {
     return res.status(500).json({ message: "Something went wrong in logout" });
   }
 };
+
+export const check = (req, res) => {
+  return res.status(200).json(req.user);
+};
